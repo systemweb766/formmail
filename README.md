@@ -1,0 +1,2 @@
+# formmail
+simple form mail
