@@ -110,8 +110,7 @@
     $result = $header . $response;
     $fp = fopen($fn, "wb");
     fputs($fp, $result);
-    fcolse($fp);
-
+    fclose($fp);
     //完了メッセージへリダイレクト
     header("Location:thanks.html");
     exit;
