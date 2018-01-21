@@ -6,9 +6,83 @@
 <body>
   <h1>simple form mail</h1>
   <form action="./formresult.php" method="post">
-    変数１:<input type="text" name="var1"><br/>
-    変数２:<input type="text" name="var2"><br/>
+    ふりがな*:<input type="text" name="hurigana"><br/>
+    名前*:<input type="text" name="name"><br/>
+    性別*:<input type="radio" name="sex" value="man">男<br/>
+    <input type="radio" name="sex" value="weman">女<br/>
+    年齢*:<input type="text" name="age"><br/>
+    郵便番号*:<input type="text" name="zip1">-<input type="text" name="zip2"><br/>
+    住所*:
+    <select name="pref_id">
+      <option value="" selected>都道府県</option>
+      <option value="1">北海道</option>
+      <option value="2">青森県</option>
+      <option value="3">岩手県</option>
+      <option value="4">宮城県</option>
+      <option value="5">秋田県</option>
+      <option value="6">山形県</option>
+      <option value="7">福島県</option>
+      <option value="8">茨城県</option>
+      <option value="9">栃木県</option>
+      <option value="10">群馬県</option>
+      <option value="11">埼玉県</option>
+      <option value="12">千葉県</option>
+      <option value="13">東京都</option>
+      <option value="14">神奈川県</option>
+      <option value="15">新潟県</option>
+      <option value="16">富山県</option>
+      <option value="17">石川県</option>
+      <option value="18">福井県</option>
+      <option value="19">山梨県</option>
+      <option value="20">長野県</option>
+      <option value="21">岐阜県</option>
+      <option value="22">静岡県</option>
+      <option value="23">愛知県</option>
+      <option value="24">三重県</option>
+      <option value="25">滋賀県</option>
+      <option value="26">京都府</option>
+      <option value="27">大阪府</option>
+      <option value="28">兵庫県</option>
+      <option value="29">奈良県</option>
+      <option value="30">和歌山県</option>
+      <option value="31">鳥取県</option>
+      <option value="32">島根県</option>
+      <option value="33">岡山県</option>
+      <option value="34">広島県</option>
+      <option value="35">山口県</option>
+      <option value="36">徳島県</option>
+      <option value="37">香川県</option>
+      <option value="38">愛媛県</option>
+      <option value="39">高知県</option>
+      <option value="40">福岡県</option>
+      <option value="41">佐賀県</option>
+      <option value="42">長崎県</option>
+      <option value="43">熊本県</option>
+      <option value="44">大分県</option>
+      <option value="45">宮崎県</option>
+      <option value="46">鹿児島県</option>
+      <option value="47">沖縄県</option>
+    </select>
+    <input type="text" name="address"><br/>
+    TEL:<input type="text" name="tel"><br/>
+    e-mail*:<input type="text" name="mail"><br/>
+    <br/>
+    Q1.当該サービスを月何回くらいの頻度で利用しますか？*:月<input type="text" name="q1">回<br/>
+    Q2.最も役に立つコーナーをお選びください*:
+    <select name="q2">
+      <option value="21">コーナー１</option>
+      <option value="22">コーナー２</option>
+      <option value="23">コーナー３</option>
+    </select><br/>
+    Q3.当サービスを知ったきっかけは？（複数回答可）*:
+    <input type="checkbox" name="q31" value="31">１．検索エンジンで見つけた<br/>
+    <input type="checkbox" name="q32" value="32">２．雑誌の記事でみつけた<br/>
+    <input type="checkbox" name="q33" value="33">３．メールマガジンで見つけた<br/>
+    <input type="checkbox" name="q34" value="34">４．友人の紹介で見つけた<br/>
+    <input type="checkbox" name="q35" value="35">５．その他<br/>
+    Q4.ご意見、ご感想等:<br/><textarea name="q4" cols="60" rows="30"></textarea><br/>
     <input type="submit" value="送信">
+    <input type="reset" value="リセット">
   </form>
 </body>
 </html>
