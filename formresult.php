@@ -103,9 +103,17 @@
     $subject =  "アンケート結果";
     $subject = mb_convert_encoding($subject, "EUC_JP", "auto");
     $rsult = mb_convert_encoding($subject, "EUC_JP", "auto");
-     
+    mb_send_mail($mailto, $subject, $result);
     //ハードディスクに保存
+    $tinfo = date("Ymd_His");//時間情報
+    $fn = sprintf("./data/%s.txt", $tinfo);
+    $result = $header . $response;
+    $fp = fopen($fn, "wb");
+    fputs($fp, $result);
+    fcolse($fp);
 
     //完了メッセージへリダイレクト
+    header("Location:thanks.html");
+    exit;
   }
  ?>
